@@ -444,6 +444,7 @@ const user = await User.aggregate([
 
 
 export {
+    generateAccessAndRefereshTokens,
     registerUser, 
     loginUser, 
     logOutUser,
