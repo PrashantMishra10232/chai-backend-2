@@ -23,6 +23,8 @@ import likesRouter from "./routes/like.routes.js"
 import tweetRouter from "./routes/tweet.routes.js"
 import playlistRouter from "./routes/playlist.routes.js"
 import dashboardRouter from "./routes/dashboard.routes.js"
+import healthcheckRouter  from "./routes/healthCheck.routes.js";
+import { healthcheck } from "./controllers/healthCheck.controller.js";
 
 // routes declaration
 app.use("/api/v1/user",userRouter)
@@ -32,5 +34,6 @@ app.use("/api/v1/likes",likesRouter)
 app.use("api/v1/tweet",tweetRouter)
 app.use("api/v1/playlist",playlistRouter)
 app.use("api/v1/dashboard",dashboardRouter)
+app.use("api/v1/healthcheck",healthcheckRouter)
 
 export {app};
