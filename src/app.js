@@ -24,7 +24,6 @@ import tweetRouter from "./routes/tweet.routes.js"
 import playlistRouter from "./routes/playlist.routes.js"
 import dashboardRouter from "./routes/dashboard.routes.js"
 import healthcheckRouter  from "./routes/healthCheck.routes.js";
-import { healthcheck } from "./controllers/healthCheck.controller.js";
 
 // routes declaration
 app.use("/api/v1/user",userRouter)
